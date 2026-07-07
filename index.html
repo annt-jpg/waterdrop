@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>waterdrop creative portal · Webprofits</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-base:#FFFFFF;--bg-alt:#FBF3F8;--bg-card:#FFFFFF;
+  --border:#EBD9E6;--text-primary:#160910;--text-secondary:#5A4351;--text-muted:#9B8592;
+  --wp:#E6007E;--wp-bg:rgba(230,0,126,0.07);--lime:#C6F24E;--ink:#160910;
+  --r-md:10px;--r-lg:14px;--r-xl:20px;--r-full:999px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg-base);color:var(--text-primary);font-family:'Poppins',system-ui,sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:14px 0}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.wp-logo{font-weight:900;font-size:14px;letter-spacing:-0.02em}
+.wp-logo span{color:var(--wp)}
+.nav-tag{font-size:12px;font-weight:700;color:var(--text-muted);letter-spacing:0.06em;text-transform:uppercase}
+
+.hero{padding:64px 0 8px}
+.hero .kick{font-size:12px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--wp);display:block;margin-bottom:12px}
+.hero h1{font-size:clamp(30px,5vw,52px);font-weight:900;letter-spacing:-0.03em;line-height:1.05;margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--wp)}
+.hero .lede{font-size:16px;color:var(--text-secondary);max-width:720px;line-height:1.6}
+
+section{padding:40px 0 72px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;margin-top:8px}
+.pack{display:flex;flex-direction:column;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s,border-color .15s}
+.pack:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(230,0,126,.16);border-color:var(--wp)}
+.pack .thumb{position:relative;aspect-ratio:16/10;overflow:hidden;background:#f0d9e8}
+.pack .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.pack .badge{position:absolute;top:12px;left:12px;background:var(--lime);color:var(--ink);font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:var(--r-full)}
+.pack .body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.pack .body h2{font-size:19px;font-weight:800;line-height:1.2;letter-spacing:-.01em}
+.pack .body p{font-size:13px;color:var(--text-secondary);line-height:1.55;margin:0}
+.pack .meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:6px}
+.pack .meta span{font-size:11px;font-weight:700;padding:4px 11px;border-radius:var(--r-full);background:var(--bg-alt);color:var(--text-secondary)}
+.pack .meta span.date{background:var(--wp-bg);color:var(--wp)}
+.pack .open{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:800;color:var(--wp);letter-spacing:.04em;text-transform:uppercase;margin-top:4px}
+
+footer{padding:32px 0;border-top:1px solid var(--border);font-size:12px;color:var(--text-muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="wp-logo">WEB<span>PROFITS</span></div>
+    <span class="nav-tag">waterdrop · creative portal</span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kick">waterdrop ANZ</span>
+    <h1>waterdrop <em>creative portal</em></h1>
+    <p class="lede">Designer spec creative packs for waterdrop. Each pack holds ready to design Meta image ad mocks with the lockup, on creative copy and asset filenames. Open a pack to hand straight to design.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="grid">
+
+      <a class="pack" href="./pink-lemonade-lastchance/">
+        <div class="thumb">
+          <span class="badge">New</span>
+          <img src="./pink-lemonade-lastchance/images/pack_glass_splash_pink.jpg" alt="Pink Lemonade pack beside a splashing glass">
+        </div>
+        <div class="body">
+          <h2>Pink Lemonade · last chance</h2>
+          <p>Sell out scarcity push. 6 mocks across two angles: last chance urgency and the limited edition reason it won't be restocked.</p>
+          <div class="meta">
+            <span class="date">2026-07-07</span>
+            <span>6 mocks</span>
+            <span>2 angles</span>
+          </div>
+          <span class="open">Open pack →</span>
+        </div>
+      </a>
+
+      <a class="pack" href="./days/">
+        <div class="thumb">
+          <img src="./days/images/range_floating_3packs.jpg" alt="Three waterdrop packs floating">
+        </div>
+        <div class="body">
+          <h2>Waterdrop Days · storewide sale</h2>
+          <p>Storewide sale creative pack. 13 mocks spanning offer mechanics, range hero shots and lifestyle scenes for the Days event.</p>
+          <div class="meta">
+            <span class="date">2026-06-16</span>
+            <span>13 mocks</span>
+            <span>Storewide</span>
+          </div>
+          <span class="open">Open pack →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Webprofits · waterdrop creative portal</span>
+    <span>Designer spec mocks · on creative copy only · Meta caption + CTA in Ads Manager</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pink Lemonade last chance creative pack · waterdrop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-base:#FFFFFF;--bg-alt:#FBF3F8;--bg-card:#FFFFFF;
+  --border:#EBD9E6;--border-med:#D9BBcf;
+  --text-primary:#160910;--text-secondary:#5A4351;--text-muted:#9B8592;
+  --wp:#E6007E;--wp-bg:rgba(230,0,126,0.07);
+  --green:#3B7A2E;--green-bg:rgba(59,122,46,0.08);
+  --amber:#B45309;--amber-bg:rgba(180,83,9,0.07);
+  --lime:#C6F24E;--ink:#160910;
+  --r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;--r-full:999px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg-base);color:var(--text-primary);font-family:'Poppins',system-ui,sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:14px 0}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.wp-logo{font-weight:900;font-size:14px;letter-spacing:-0.02em}
+.wp-logo span{color:var(--wp)}
+.nav-tag{font-size:12px;font-weight:700;color:var(--text-muted);letter-spacing:0.06em;text-transform:uppercase}
+.nav-links{display:flex;gap:6px;flex-wrap:wrap}
+.nav-links a{font-size:11px;font-weight:700;padding:5px 12px;border-radius:var(--r-full);text-decoration:none;color:var(--text-muted);border:1px solid var(--border);transition:all .15s}
+.nav-links a:hover{color:var(--wp);border-color:var(--wp)}
+
+section{padding:56px 0 64px}
+section + section{border-top:1px solid var(--border)}
+section:nth-child(even){background:var(--bg-alt)}
+.label{font-size:12px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--wp);display:block;margin-bottom:12px}
+.section-title{font-size:clamp(26px,4vw,40px);font-weight:800;line-height:1.12;margin-bottom:14px}
+.section-sub{font-size:16px;color:var(--text-secondary);max-width:780px;margin-bottom:32px;line-height:1.65}
+.hero{padding:64px 0 24px}
+.hero h1{font-size:clamp(28px,4.4vw,44px);font-weight:900;letter-spacing:-0.03em;line-height:1.08;margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--wp)}
+.hero .lede{font-size:15px;color:var(--text-secondary);max-width:820px;line-height:1.6}
+.meta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.meta-pill{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;padding:6px 14px;border-radius:var(--r-full);background:var(--bg-card);border:1px solid var(--border);color:var(--text-secondary)}
+.meta-pill.product{background:var(--wp-bg);color:var(--wp);border-color:transparent}
+.meta-pill.market{background:var(--amber-bg);color:var(--amber);border-color:transparent}
+.meta-pill.count{background:var(--green-bg);color:var(--green);border-color:transparent}
+
+.summary-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-top:24px}
+.summary-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:20px;text-align:center}
+.summary-card .s-val{font-size:24px;font-weight:900;letter-spacing:-0.02em}
+.summary-card .s-label{font-size:11px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;margin-top:4px}
+
+.concept-section-head{margin-bottom:28px}
+.concept-section-head h2.section-title{margin-bottom:10px}
+.concept-section-head p{font-size:14px;color:var(--text-secondary);max-width:780px;margin-bottom:0;line-height:1.65}
+
+.style-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:8px}
+@media(max-width:720px){.style-grid{grid-template-columns:1fr}}
+.style-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column}
+section:nth-child(even) .style-card{background:var(--bg-base)}
+.style-card-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:12px;flex:1}
+.style-card-head{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.style-card-code{font-family:'SFMono-Regular',Menlo,Monaco,monospace;font-size:11px;font-weight:700;background:var(--text-primary);color:#fff;padding:3px 8px;border-radius:4px;letter-spacing:0}
+.style-card-style{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--wp);text-align:right}
+.style-card-notes{font-size:12.5px;line-height:1.55;color:var(--text-secondary);margin:0}
+.style-card-meta-row{display:grid;grid-template-columns:60px 1fr;gap:10px;font-size:11px;line-height:1.5;background:var(--bg-alt);border-radius:var(--r-sm);padding:8px 10px}
+section:nth-child(even) .style-card-meta-row{background:var(--bg-base);border:1px solid var(--border)}
+.style-card-meta-row > span{font-size:9px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-muted);padding-top:2px}
+.style-card-meta-row code{font-family:'SFMono-Regular',Menlo,Monaco,monospace;font-size:11px;color:var(--text-primary);background:transparent;padding:0;word-break:break-all}
+
+.ad-copy-block{background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden;margin-top:auto}
+section:nth-child(even) .ad-copy-block{background:var(--bg-base)}
+.ad-copy-title{font-size:9px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);padding:10px 12px 6px}
+.ad-copy-table{width:100%;border-collapse:collapse;font-size:12px}
+.ad-copy-table td{padding:7px 12px;border-top:1px solid var(--border);vertical-align:top;line-height:1.45}
+.ad-copy-table td:first-child{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);width:38%;white-space:nowrap}
+.ad-copy-table td:last-child{font-weight:600;color:var(--text-primary)}
+
+/* Lockup: 1:1 image mock */
+.lockup{position:relative;aspect-ratio:1/1;width:100%;overflow:hidden;background:#000;container-type:inline-size}
+.lockup img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:0}
+
+/* Top headline gradient */
+.lk-top{position:absolute;top:0;left:0;right:0;padding:6cqw 5cqw 5cqw;background:linear-gradient(to bottom,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 100%);color:#fff;z-index:2;text-align:center}
+.lk-top.prom{padding:8cqw 5cqw 6cqw}
+.lk-h1{font-size:7.6cqw;line-height:1.04;font-weight:900;letter-spacing:-.01em;text-shadow:0 2px 16px rgba(0,0,0,.5);color:#fff}
+.lk-h1 em{font-style:normal;color:var(--lime)}
+.lk-sub{font-size:3.6cqw;font-weight:700;margin-top:2.8cqw;color:#fff;line-height:1.28;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+
+/* Bottom name strip */
+.lk-name{position:absolute;left:0;right:0;bottom:0;padding:9cqw 5cqw 5cqw;background:linear-gradient(to top,rgba(22,9,16,.92) 0%,rgba(22,9,16,.72) 55%,rgba(22,9,16,0) 100%);color:#fff;text-align:center;z-index:3}
+.lk-name .h{font-size:5.2cqw;font-weight:900;line-height:1.06;letter-spacing:-.01em}
+.lk-name .h em{font-style:normal;color:var(--lime)}
+.lk-name .sub{font-size:3cqw;font-weight:700;margin-top:1.8cqw;opacity:.94;letter-spacing:.02em}
+
+/* Headline shift modifiers */
+.lk-top.shift-down{top:24%;background:linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,.42) 50%,rgba(0,0,0,0) 100%)}
+.lk-top.shift-mid{top:44%;background:linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,.42) 50%,rgba(0,0,0,0) 100%)}
+.lk-top.shift-bottom{top:auto;bottom:0;padding:9cqw 5cqw 5cqw;background:linear-gradient(to top,rgba(22,9,16,.92) 0%,rgba(22,9,16,.6) 55%,rgba(22,9,16,0) 100%)}
+
+/* Small top kicker pill (centred, not a scarcity chip) */
+.lk-kicker{position:absolute;top:5cqw;left:0;right:0;text-align:center;z-index:4}
+.lk-kicker span{display:inline-block;background:var(--lime);color:var(--ink);font-size:2.6cqw;font-weight:900;padding:1.4cqw 3.2cqw;border-radius:var(--r-full);letter-spacing:.1em;text-transform:uppercase}
+
+footer{padding:32px 0;border-top:1px solid var(--border);font-size:12px;color:var(--text-muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+.compliance-row{background:var(--wp-bg);border:1px solid var(--wp);border-radius:var(--r-md);padding:14px 18px;margin-top:22px;font-size:13px;color:var(--wp);font-weight:600;line-height:1.5}
+.compliance-row strong{font-weight:800}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="wp-logo">WEB<span>PROFITS</span></div>
+    <span class="nav-tag">waterdrop · Pink Lemonade last chance creative pack</span>
+    <div class="nav-links">
+      <a href="#c01">C01 · Last chance</a>
+      <a href="#c02">C02 · Won't be restocked</a>
+    </div>
+  </div>
+</nav>
+
+<section id="hero" class="hero">
+  <div class="wrap">
+    <span class="label">Creative pack v1 · 2026-07-07</span>
+    <h1>Pink Lemonade is a <em>limited edition</em>. When it's gone, it's gone.</h1>
+    <p class="lede">6 ready to design Meta image ad mocks for the Pink Lemonade sell out push. One idea, two angles: last chance urgency (limited run, selling fast, grab it now) and the reason behind it (limited edition flavour, no restock planned). Every headline sits on the existing Pink Lemonade shoot, so the pink does the pattern interrupt in the feed. No emojis anywhere. On creative copy only. Meta caption and CTA button live in Ads Manager.</p>
+    <div class="meta-row">
+      <span class="meta-pill product">Pink Lemonade · limited edition</span>
+      <span class="meta-pill count">6 styles · 2 angles</span>
+      <span class="meta-pill market">AU · zero sugar hydration</span>
+      <span class="meta-pill">Scarcity push · no restock planned</span>
+    </div>
+    <div class="summary-row">
+      <div class="summary-card"><div class="s-val">6</div><div class="s-label">styles</div></div>
+      <div class="summary-card"><div class="s-val">2</div><div class="s-label">angles</div></div>
+      <div class="summary-card"><div class="s-val">6</div><div class="s-label">photo assets</div></div>
+      <div class="summary-card"><div class="s-val">1:1</div><div class="s-label">feed ratio</div></div>
+    </div>
+    <div class="compliance-row">
+      <strong>Waterdrop copy locks applied.</strong> No emojis. No bottle as hero. No top right offer chips. Every scarcity claim ties to the on pack "limited edition" label so nothing is invented. Primary text, headline field and on image copy stay distinct when built in Ads Manager. AU spelling, sentence case, no em dashes.
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     C01 · LAST CHANCE (PURE SCARCITY)
+     ========================================================= -->
+<section id="c01">
+  <div class="wrap">
+    <div class="concept-section-head">
+      <span class="label">Angle 01 · Last chance</span>
+      <h2 class="section-title">C01 · Last chance. Selling fast.</h2>
+      <p>Pure urgency. Lead with the fact that Pink Lemonade is limited and moving, no explanation needed. Runs wide on cold and warm AU audiences. 3 visual styles so the feed never repeats look: top headline on the splash shot, mid frame on the cube drop, and a bottom band over the lifestyle sip.</p>
+    </div>
+    <div class="style-grid">
+
+      <!-- C01-S1: Glass + pack splash · top headline -->
+      <div class="style-card">
+        <div class="lockup">
+          <img class="bg" src="images/pack_glass_splash_pink.jpg" alt="Pink Lemonade pack beside a splashing glass on a pink ledge">
+          <div class="lk-top prom">
+            <div class="lk-h1">Last call for<br><em>Pink Lemonade</em>.</div>
+          </div>
+          <div class="lk-name">
+            <div class="h">Limited run.</div>
+            <div class="sub">When it's gone, it's gone.</div>
+          </div>
+        </div>
+        <div class="style-card-body">
+          <div class="style-card-head">
+            <div class="style-card-code">C01-S1</div>
+            <div class="style-card-style">Splash · top headline</div>
+          </div>
+          <p class="style-card-notes">Pack and splashing glass on the pink ledge. The empty pink top third carries the headline with no clutter. Bottom band lands the plain scarcity line. Product still reads at thumbnail size without being the hero. Strongest for cold prospecting where the flavour has to register in one scroll.</p>
+          <div class="style-card-meta-row"><span>Asset</span><code>pack_glass_splash_pink.jpg</code></div>
+          <div class="ad-copy-block">
+            <div class="ad-copy-title">On creative copy</div>
+            <table class="ad-copy-table">
+              <tbody>
+                <tr><td>Headline</td><td>Last call for Pink Lemonade.</td></tr>
+                <tr><td>Bottom title</td><td>Limited run.</td></tr>
+                <tr><td>Bottom sub</td><td>When it's gone, it's gone.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- C01-S2: Cube drop · mid-frame headline -->
+      <div class="style-card">
+        <div class="lockup">
+          <img class="bg" src="images/ice_burst_splash.jpg" alt="A hand dropping a Pink Lemonade cube into a splashing glass">
+          <div class="lk-kicker"><span>Limited edition</span></div>
+          <div class="lk-top prom shift-mid">
+            <div class="lk-h1">Once it sells out,<br><em>that's it</em>.</div>
+            <div class="lk-sub">No restock planned.</div>
+          </div>
+        </div>
+        <div class="style-card-body">
+          <div class="style-card-head">
+            <div class="style-card-code">C01-S2</div>
+            <div class="style-card-style">Cube drop · mid frame</div>
+          </div>
+          <p class="style-card-notes">The cube drop and splash carry motion. Headline sits mid frame in the open pink space above the glass so it never covers the action. Small lime kicker up top labels the edition without shouting an offer. Sub line closes the door plainly. Strongest as a scroll stopper on Reels and feed for the deal aware audience.</p>
+          <div class="style-card-meta-row"><span>Asset</span><code>ice_burst_splash.jpg</code></div>
+          <div class="ad-copy-block">
+            <div class="ad-copy-title">On creative copy</div>
+            <table class="ad-copy-table">
+              <tbody>
+                <tr><td>Top kicker</td><td>Limited edition</td></tr>
+                <tr><td>Headline</td><td>Once it sells out, that's it.</td></tr>
+                <tr><td>Sub</td><td>No restock planned.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- C01-S3: Bucket hat sip · bottom band -->
+      <div class="style-card">
+        <div class="lockup">
+          <img class="bg" src="images/model_bucket_hat.jpg" alt="Model in a pink bucket hat sipping Pink Lemonade against a blue sky">
+          <div class="lk-name">
+            <div class="h">Pink Lemonade is <em>leaving for good</em>.</div>
+            <div class="sub">This is your last chance to stock up.</div>
+          </div>
+        </div>
+        <div class="style-card-body">
+          <div class="style-card-head">
+            <div class="style-card-code">C01-S3</div>
+            <div class="style-card-style">Lifestyle sip · bottom band</div>
+          </div>
+          <p class="style-card-notes">Lifestyle sip shot, model front and centre so it reads as a real moment not a product card. Copy pinned to a bottom band keeps the face and the blue sky clean. Warmest, most human style in the set. Strongest for warm audiences and lookalikes who respond to people over packs.</p>
+          <div class="style-card-meta-row"><span>Asset</span><code>model_bucket_hat.jpg</code></div>
+          <div class="ad-copy-block">
+            <div class="ad-copy-title">On creative copy</div>
+            <table class="ad-copy-table">
+              <tbody>
+                <tr><td>Bottom title</td><td>Pink Lemonade is leaving for good.</td></tr>
+                <tr><td>Bottom sub</td><td>This is your last chance to stock up.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     C02 · WON'T BE RESTOCKED (REASON + URGENCY)
+     ========================================================= -->
+<section id="c02">
+  <div class="wrap">
+    <div class="concept-section-head">
+      <span class="label">Angle 02 · Won't be restocked</span>
+      <h2 class="section-title">C02 · This one isn't coming back.</h2>
+      <p>Same scarcity, but each headline gives the reason: Pink Lemonade is a limited edition flavour, so once stock runs out there is no reorder. Ties every claim back to the on pack label so nothing is invented. Strongest for warm and retargeting audiences who have seen the flavour and are on the fence.</p>
+    </div>
+    <div class="style-grid">
+
+      <!-- C02-S1: Hand holding pack · top headline -->
+      <div class="style-card">
+        <div class="lockup">
+          <img class="bg" src="images/hand_pack_pink.jpg" alt="A hand holding the Pink Lemonade pack against a magenta background">
+          <div class="lk-top prom">
+            <div class="lk-h1">This flavour<br><em>isn't coming back</em>.</div>
+          </div>
+          <div class="lk-name">
+            <div class="h">Grab it before it's <em>gone for good</em>.</div>
+          </div>
+        </div>
+        <div class="style-card-body">
+          <div class="style-card-head">
+            <div class="style-card-code">C02-S1</div>
+            <div class="style-card-style">Pack in hand · top headline</div>
+          </div>
+          <p class="style-card-notes">Hand holding the pack against flat magenta gives a clean stage for a bold top headline. Reason lands in the bottom band so the buyer knows why it is scarce, not just that it is. Pack visible but held, not posed as a hero. Strongest for retargeting where the buyer already recognises the flavour.</p>
+          <div class="style-card-meta-row"><span>Asset</span><code>hand_pack_pink.jpg</code></div>
+          <div class="ad-copy-block">
+            <div class="ad-copy-title">On creative copy</div>
+            <table class="ad-copy-table">
+              <tbody>
+                <tr><td>Headline</td><td>This flavour isn't coming back.</td></tr>
+                <tr><td>Bottom title</td><td>Grab it before it's gone for good.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- C02-S2: Shelf splash · mid-frame reason -->
+      <div class="style-card">
+        <div class="lockup">
+          <img class="bg" src="images/hand_cube_splash.jpg" alt="Pink Lemonade pack on a pink ledge beside a splashing glass with a dropping cube">
+          <div class="lk-top prom shift-down">
+            <div class="lk-h1">Limited edition<br>means <em>limited</em>.</div>
+            <div class="lk-sub">Once it's gone, we're not making more.</div>
+          </div>
+        </div>
+        <div class="style-card-body">
+          <div class="style-card-head">
+            <div class="style-card-code">C02-S2</div>
+            <div class="style-card-style">Shelf splash · reason lead</div>
+          </div>
+          <p class="style-card-notes">Pack on the ledge with the cube drop and splash. Headline sits in the upper pink space and states the reason as a hard fact. Sub line hammers the finality in a plain, slightly cheeky voice. No bottom band so the splash reads clean. Strongest for the on the fence buyer who needs the why before they act.</p>
+          <div class="style-card-meta-row"><span>Asset</span><code>hand_cube_splash.jpg</code></div>
+          <div class="ad-copy-block">
+            <div class="ad-copy-title">On creative copy</div>
+            <table class="ad-copy-table">
+              <tbody>
+                <tr><td>Headline</td><td>Limited edition means limited.</td></tr>
+                <tr><td>Sub</td><td>Once it's gone, we're not making more.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- C02-S3: Rooftop model · bottom band -->
+      <div class="style-card">
+        <div class="lockup">
+          <img class="bg" src="images/model_cowboy_city.jpg" alt="Model in a pink hat sipping Pink Lemonade on a city rooftop">
+          <div class="lk-name">
+            <div class="h">Last chance to try <em>Pink Lemonade</em>.</div>
+            <div class="sub">Once this run sells out, that's the last of it.</div>
+          </div>
+        </div>
+        <div class="style-card-body">
+          <div class="style-card-head">
+            <div class="style-card-code">C02-S3</div>
+            <div class="style-card-style">Rooftop lifestyle · bottom band</div>
+          </div>
+          <p class="style-card-notes">Editorial rooftop sip, boldest lifestyle frame in the set. Copy pinned to a bottom band so the model and skyline stay uncovered. Closes the pack on the "try it before it's gone" line, aimed at anyone who has seen the flavour but never bought. Strongest for cold to warm bridging and brand led prospecting.</p>
+          <div class="style-card-meta-row"><span>Asset</span><code>model_cowboy_city.jpg</code></div>
+          <div class="ad-copy-block">
+            <div class="ad-copy-title">On creative copy</div>
+            <table class="ad-copy-table">
+              <tbody>
+                <tr><td>Bottom title</td><td>Last chance to try Pink Lemonade.</td></tr>
+                <tr><td>Bottom sub</td><td>Once this run sells out, that's the last of it.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Webprofits · waterdrop · Pink Lemonade last chance creative pack v1 · 2026-07-07</span>
+    <span>Designer spec mocks · on creative copy only · Meta caption + CTA in Ads Manager</span>
+  </div>
+</footer>
+
+</body>
+</html>
